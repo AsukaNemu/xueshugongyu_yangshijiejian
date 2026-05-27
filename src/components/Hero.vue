@@ -19,10 +19,9 @@
             <span class="text-brand-700">可以攻玉</span>
           </h1>
           <div class="relative mt-6">
-            <p class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-ink-800 tracking-wider">
+            <p class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-wider" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><path d=%22M100 10 C120 30 160 40 190 70 C170 100 140 120 100 190 C60 120 30 100 10 70 C40 40 80 30 100 10Z%22 fill=%22%23166534%22 opacity=%220.15%22/><path d=%22M50 20 C65 35 85 40 95 60 C80 75 65 85 50 95 C35 85 20 75 5 60 C15 40 35 35 50 20Z%22 fill=%22%2315803d%22 opacity=%220.12%22/><path d=%22M150 50 C165 65 185 70 195 90 C180 105 165 115 150 125 C135 115 120 105 105 90 C115 70 135 65 150 50Z%22 fill=%22%23166534%22 opacity=%220.1%22/></svg>'); background-size: 80px 80px; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">
               See Further · Think Deeper · Act Faster
             </p>
-            <div class="absolute inset-0 pointer-events-none" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path d=%22M50 0 C60 20 80 30 100 50 C80 70 60 80 50 100 C40 80 20 70 0 50 C20 30 40 20 50 0Z%22 fill=%22%23166534%22 opacity=%220.08%22/></svg>'); background-size: 60px 60px; mix-blend-mode: multiply;"></div>
           </div>
           <p class="mt-6 text-base text-ink-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
             基于Agent架构的下一代科学研究系统。搭配海量工具、技能与亿级文献库，打造属于你的科研助手。
