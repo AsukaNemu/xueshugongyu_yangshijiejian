@@ -9,3 +9,20 @@ html {
 body {
   @apply text-slate-800 antialiased;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .animate-fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

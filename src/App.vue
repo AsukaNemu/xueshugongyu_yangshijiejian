@@ -3,6 +3,6 @@
 
 <template>
   <div class="min-h-screen">
-    <p class="text-center py-20 text-2xl">App loading...</p>
+    <p class="text-center py-20">Loading...</p>
   </div>
 </template>
