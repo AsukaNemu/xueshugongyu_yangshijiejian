@@ -23,16 +23,16 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 <template>
   <nav
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-    :class="scrolled ? 'bg-gradient-to-b from-brand-50/95 via-white/95 to-white/90 backdrop-blur-md shadow-sm border-b border-ink-100' : 'bg-gradient-to-b from-brand-50/80 via-white/60 to-transparent backdrop-blur-sm'"
+    :class="scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm border-b border-ink-100/50' : 'bg-gradient-to-b from-brand-50/60 via-white/40 to-transparent'"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3">
-          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center shadow-lg shadow-brand-600/20">
-            <span class="text-white font-bold text-base">攻</span>
+        <a href="#" class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center">
+            <span class="text-white font-bold text-sm">攻</span>
           </div>
-          <span class="text-xl font-bold text-ink-900">攻玉学术</span>
+          <span class="text-lg font-bold text-ink-900">攻玉学术</span>
         </a>
 
         <!-- Desktop Nav -->
@@ -41,14 +41,14 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="px-4 py-2 text-sm font-medium text-ink-600 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-all duration-200"
+            class="px-3 py-1.5 text-sm text-ink-600 hover:text-brand-600 transition-colors duration-200"
           >
             {{ link.label }}
           </a>
-          <div class="ml-4">
+          <div class="ml-3">
             <a
               href="#"
-              class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-brand-700 rounded-xl hover:bg-brand-800 transition-all duration-300 shadow-md shadow-brand-700/20 hover:shadow-lg hover:shadow-brand-700/30"
+              class="inline-flex items-center px-5 py-2 text-sm font-medium text-white bg-brand-600 rounded-full hover:bg-brand-700 transition-all duration-300"
             >
               即刻开始
             </a>

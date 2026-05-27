@@ -2,93 +2,65 @@
 </script>
 
 <template>
-  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
-    <!-- Background decoration -->
+  <section class="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
+    <!-- Large gradient background - matching jadense.com ink wash effect -->
     <div class="absolute inset-0 -z-10">
-      <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-200/40 rounded-full blur-3xl" />
-      <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-100 rounded-full blur-3xl" />
-      <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/50 to-white" />
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[120%] h-[600px] bg-gradient-to-b from-brand-200/40 via-brand-100/30 to-transparent rounded-full blur-3xl" />
+      <div class="absolute top-10 left-1/3 w-[500px] h-[500px] bg-gradient-to-br from-brand-300/25 to-brand-100/20 rounded-full blur-3xl" />
+      <div class="absolute top-20 right-1/4 w-[400px] h-[400px] bg-gradient-to-bl from-brand-200/20 to-transparent rounded-full blur-3xl" />
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Left: Text -->
-        <div class="text-center lg:text-left">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-ink-900">
-            他山之石
-            <br />
-            <span class="text-brand-700">可以攻玉</span>
-          </h1>
-          <div class="relative mt-6 inline-block">
-            <p class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-wider text-brand-800 relative z-10">
-              See Further · Think Deeper · Act Faster
-            </p>
-            <div class="absolute inset-0 z-20 pointer-events-none opacity-20" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><path d=%22M60 5 C75 25 95 35 115 55 C95 75 75 85 60 105 C45 85 25 75 5 55 C25 35 45 25 60 5Z%22 fill=%22%23052e16%22/></svg>'); background-size: 40px 40px; mix-blend-mode: multiply;"></div>
-          </div>
-          <p class="mt-6 text-base text-ink-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            基于Agent架构的下一代科学研究系统。搭配海量工具、技能与亿级文献库，打造属于你的科研助手。
-          </p>
-          <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a
-              href="#"
-              class="px-8 py-3 text-base font-medium text-white bg-brand-700 rounded-xl hover:bg-brand-800 transition-all duration-300 hover:shadow-lg hover:shadow-brand-700/25 text-center"
-            >
-              即刻开始
-            </a>
-            <a
-              href="#pricing"
-              class="px-8 py-3 text-base font-medium text-ink-700 bg-white border border-ink-200 rounded-xl hover:border-brand-300 hover:text-brand-700 transition-all duration-300 text-center"
-            >
-              查看方案
-            </a>
-          </div>
-        </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <!-- Title -->
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-ink-900 mb-4">
+        他山之石
+        <br />
+        <span class="text-brand-600">可以攻玉</span>
+      </h1>
 
-        <!-- Right: Product Preview -->
-        <div class="relative">
-          <div class="bg-white rounded-2xl shadow-2xl shadow-ink-200/50 border border-ink-100 overflow-hidden">
-            <div class="bg-ink-900 rounded-t-xl p-2 flex items-center space-x-2">
-              <div class="flex space-x-1.5">
-                <div class="w-3 h-3 rounded-full bg-red-400" />
-                <div class="w-3 h-3 rounded-full bg-yellow-400" />
-                <div class="w-3 h-3 rounded-full bg-green-400" />
-              </div>
-              <div class="flex-1 bg-ink-800 rounded-md h-6 flex items-center px-3">
-                <span class="text-xs text-ink-400">app.jadense.com</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start space-x-3">
-                <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center">
-                  <span class="text-brand-700 text-sm font-bold">U</span>
-                </div>
-                <div class="bg-ink-50 rounded-2xl rounded-tl-sm px-4 py-2 max-w-xs">
-                  <p class="text-sm text-ink-700">帮我查找关于深度学习在医学影像中应用的最新文献</p>
-                </div>
-              </div>
-              <div class="flex items-start space-x-3 justify-end">
-                <div class="bg-brand-50 rounded-2xl rounded-tr-sm px-4 py-2 max-w-sm">
-                  <p class="text-sm text-ink-700">已为您检索到 1,247 篇相关文献，以下是按引用量排序的前 10 篇...</p>
-                </div>
-                <div class="w-8 h-8 rounded-full bg-brand-700 flex items-center justify-center">
-                  <span class="text-white text-sm font-bold">攻</span>
-                </div>
-              </div>
-              <div class="flex items-start space-x-3">
-                <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center">
-                  <span class="text-brand-700 text-sm font-bold">U</span>
-                </div>
-                <div class="bg-ink-50 rounded-2xl rounded-tl-sm px-4 py-2 max-w-xs">
-                  <p class="text-sm text-ink-700">帮我总结一下 ResNet 在这个领域的主要贡献</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Floating badge -->
-          <div class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg px-4 py-2 border border-ink-100">
-            <div class="flex items-center space-x-2">
-              <div class="w-2 h-2 rounded-full bg-brand-500" />
-              <span class="text-xs text-ink-500">Agent 就绪</span>
+      <!-- Subtitle -->
+      <p class="text-xl sm:text-2xl font-display font-bold text-brand-700/80 tracking-wider mb-8">
+        See Further · Think Deeper · Act Faster
+      </p>
+
+      <!-- Description -->
+      <p class="text-base text-ink-500 max-w-2xl mx-auto mb-8 leading-relaxed">
+        基于Agent架构的下一代科学研究系统。搭配海量工具、技能与亿级文献库，打造属于你的科研助手。
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+        <a
+          href="#"
+          class="px-8 py-3 text-base font-medium text-white bg-brand-600 rounded-full hover:bg-brand-700 transition-all duration-300 hover:shadow-lg hover:shadow-brand-600/25 text-center"
+        >
+          即刻开始
+        </a>
+        <a
+          href="#pricing"
+          class="px-8 py-3 text-base font-medium text-ink-700 bg-white/80 border border-ink-200 rounded-full hover:border-brand-300 hover:text-brand-700 transition-all duration-300 text-center"
+        >
+          查看方案
+        </a>
+      </div>
+
+      <!-- Search bar / Input mockup - matching jadense.com -->
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl shadow-brand-100/50 border border-brand-100 p-2">
+          <div class="flex items-center bg-ink-50 rounded-xl px-4 py-3">
+            <svg class="w-5 h-5 text-ink-400 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input
+              type="text"
+              placeholder="输入你的研究问题..."
+              class="flex-1 bg-transparent text-sm text-ink-700 outline-none placeholder:text-ink-400"
+              readonly
+            />
+            <div class="ml-3 w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center cursor-pointer hover:bg-brand-700 transition-colors">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </div>
           </div>
         </div>
