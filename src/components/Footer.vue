@@ -63,8 +63,8 @@ const footerLinks = {
 
       <!-- Copyright -->
       <div class="pt-8 border-t border-ink-800 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-        <p class="text-sm text-ink-500">&copy; 2026 深圳市具陈星火科技有限公司 版权所有</p>
-        <p class="text-sm text-ink-500">粤ICP备2026035016号</p>
+        <p class="text-sm text-ink-500">&copy; 2026 [公司名称] 版权所有</p>
+        <p class="text-sm text-ink-500">[ICP备案号]</p>
       </div>
     </div>
   </footer>
