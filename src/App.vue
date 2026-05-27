@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import AgentFeatures from './components/AgentFeatures.vue'
 import WorkflowDemo from './components/WorkflowDemo.vue'
+import ResearchCoverage from './components/ResearchCoverage.vue'
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import WorkflowDemo from './components/WorkflowDemo.vue'
     <Hero />
     <AgentFeatures />
     <WorkflowDemo />
+    <ResearchCoverage />
   </div>
 </template>
