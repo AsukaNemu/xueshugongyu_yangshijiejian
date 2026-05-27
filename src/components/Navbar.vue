@@ -22,8 +22,8 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b"
-    :class="scrolled ? 'bg-white/95 backdrop-blur-md border-ink-100 shadow-sm' : 'bg-white/80 backdrop-blur-sm border-transparent'"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    :class="scrolled ? 'bg-gradient-to-b from-brand-50/95 via-white/95 to-white/90 backdrop-blur-md shadow-sm border-b border-ink-100' : 'bg-gradient-to-b from-brand-50/80 via-white/60 to-transparent backdrop-blur-sm'"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
