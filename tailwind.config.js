@@ -46,6 +46,13 @@ export default {
           'Arial',
           'sans-serif',
         ],
+        display: [
+          'Playfair Display',
+          'Georgia',
+          'Cambria',
+          'Times New Roman',
+          'serif',
+        ],
       },
     },
   },

@@ -18,9 +18,12 @@
             <br />
             <span class="text-brand-700">可以攻玉</span>
           </h1>
-          <p class="mt-4 text-lg text-ink-500 tracking-wide">
-            See Further · Think Deeper · Act Faster
-          </p>
+          <div class="relative mt-6">
+            <p class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold text-ink-800 tracking-wider">
+              See Further · Think Deeper · Act Faster
+            </p>
+            <div class="absolute inset-0 pointer-events-none" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><path d=%22M50 0 C60 20 80 30 100 50 C80 70 60 80 50 100 C40 80 20 70 0 50 C20 30 40 20 50 0Z%22 fill=%22%23166534%22 opacity=%220.08%22/></svg>'); background-size: 60px 60px; mix-blend-mode: multiply;"></div>
+          </div>
           <p class="mt-6 text-base text-ink-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
             基于Agent架构的下一代科学研究系统。搭配海量工具、技能与亿级文献库，打造属于你的科研助手。
           </p>
