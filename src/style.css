@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply text-slate-800 antialiased;
+  @apply text-ink-800 antialiased bg-white;
 }
 
 h1, h2, h3, h4, h5, h6 {
