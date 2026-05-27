@@ -5,8 +5,9 @@
   <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
     <!-- Background decoration -->
     <div class="absolute inset-0 -z-10">
-      <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-100/30 rounded-full blur-3xl" />
-      <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-50 rounded-full blur-3xl" />
+      <div class="absolute top-20 left-1/4 w-96 h-96 bg-brand-200/40 rounded-full blur-3xl" />
+      <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-brand-100 rounded-full blur-3xl" />
+      <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/50 to-white" />
     </div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
