@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import AgentFeatures from './components/AgentFeatures.vue'
+import WorkflowDemo from './components/WorkflowDemo.vue'
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import AgentFeatures from './components/AgentFeatures.vue'
     <Navbar />
     <Hero />
     <AgentFeatures />
+    <WorkflowDemo />
   </div>
 </template>
