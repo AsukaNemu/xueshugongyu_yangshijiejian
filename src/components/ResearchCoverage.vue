@@ -31,10 +31,10 @@ const sections = [
   <section class="animate-fade-in-up py-20 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">
+        <h2 class="text-3xl sm:text-4xl font-bold text-ink-900">
           覆盖科研全流程
         </h2>
-        <p class="mt-4 text-lg text-slate-600">
+        <p class="mt-4 text-lg text-ink-600">
           从文献调研到论文写作，一站式支持
         </p>
       </div>
@@ -44,23 +44,23 @@ const sections = [
           v-for="section in sections"
           :key="section.label"
         >
-          <h3 class="text-2xl font-bold text-slate-800 mb-8 text-center">
+          <h3 class="text-2xl font-bold text-ink-800 mb-8 text-center">
             {{ section.label }}
           </h3>
           <div class="grid md:grid-cols-3 gap-6">
             <div
               v-for="feature in section.features"
               :key="feature.num"
-              class="bg-slate-50 rounded-2xl p-6 border border-slate-100"
+              class="bg-ink-50 rounded-2xl p-6 border border-ink-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300"
             >
               <div class="text-sm font-bold text-brand-600 mb-2">{{ feature.num }}</div>
-              <h4 class="text-lg font-semibold text-slate-800 mb-2">{{ feature.name }}</h4>
-              <p class="text-sm text-slate-500">{{ feature.desc }}</p>
+              <h4 class="text-lg font-semibold text-ink-800 mb-2">{{ feature.name }}</h4>
+              <p class="text-sm text-ink-500">{{ feature.desc }}</p>
             </div>
           </div>
           <!-- Placeholder for preview -->
-          <div class="mt-8 bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl h-48 flex items-center justify-center border border-slate-200">
-            <p class="text-sm text-slate-400">{{ section.label }}功能预览区域</p>
+          <div class="mt-8 bg-gradient-to-br from-ink-50 to-brand-50 rounded-2xl h-48 flex items-center justify-center border border-ink-100">
+            <p class="text-sm text-ink-400">{{ section.label }}功能预览区域</p>
           </div>
         </div>
       </div>

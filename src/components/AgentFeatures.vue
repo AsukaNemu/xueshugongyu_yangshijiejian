@@ -37,13 +37,13 @@ const features = [
   <section id="introduction" class="animate-fade-in-up py-20 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">
+        <h2 class="text-3xl sm:text-4xl font-bold text-ink-900">
           攻玉学术智能体
         </h2>
-        <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+        <p class="mt-4 text-lg text-ink-600 max-w-3xl mx-auto">
           基于Agent架构的下一代科学研究系统。
         </p>
-        <p class="mt-2 text-base text-slate-500 max-w-2xl mx-auto">
+        <p class="mt-2 text-base text-ink-500 max-w-2xl mx-auto">
           搭配海量工具、技能与亿级文献库，打造属于你的科研助手。
         </p>
       </div>
@@ -52,11 +52,11 @@ const features = [
         <div
           v-for="feature in features"
           :key="feature.title"
-          class="bg-slate-50 rounded-2xl p-6 border border-slate-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          class="bg-ink-50 rounded-2xl p-6 border border-ink-100 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
         >
           <div class="text-4xl mb-4">{{ feature.icon }}</div>
-          <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ feature.title }}</h3>
-          <p class="text-sm text-slate-500 leading-relaxed">{{ feature.desc }}</p>
+          <h3 class="text-lg font-semibold text-ink-800 mb-2">{{ feature.title }}</h3>
+          <p class="text-sm text-ink-500 leading-relaxed">{{ feature.desc }}</p>
         </div>
       </div>
     </div>
