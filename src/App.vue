@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue'
 import AgentFeatures from './components/AgentFeatures.vue'
 import WorkflowDemo from './components/WorkflowDemo.vue'
 import ResearchCoverage from './components/ResearchCoverage.vue'
+import ClosingCTA from './components/ClosingCTA.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import ResearchCoverage from './components/ResearchCoverage.vue'
     <AgentFeatures />
     <WorkflowDemo />
     <ResearchCoverage />
+    <ClosingCTA />
   </div>
 </template>
