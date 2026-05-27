@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class="py-20 lg:py-28 bg-slate-50">
+  <section class="animate-fade-in-up py-20 lg:py-28 bg-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Left: Text -->

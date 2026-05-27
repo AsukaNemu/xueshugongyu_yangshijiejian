@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class="py-20 lg:py-28 bg-gradient-to-br from-brand-50 to-slate-50">
+  <section class="animate-fade-in-up py-20 lg:py-28 bg-gradient-to-br from-brand-50 to-slate-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
         让学术研究重新聚焦于灵感

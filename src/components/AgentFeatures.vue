@@ -34,7 +34,7 @@ const features = [
 </script>
 
 <template>
-  <section id="introduction" class="py-20 lg:py-28 bg-white">
+  <section id="introduction" class="animate-fade-in-up py-20 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">
