@@ -22,40 +22,42 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
 
 <template>
   <nav
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-    :class="scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b"
+    :class="scrolled ? 'bg-white/95 backdrop-blur-md border-ink-100 shadow-sm' : 'bg-white/80 backdrop-blur-sm border-transparent'"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-2">
-          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center">
-            <span class="text-white font-bold text-sm">攻</span>
+        <a href="#" class="flex items-center space-x-3">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-brand-600 to-brand-800 flex items-center justify-center shadow-lg shadow-brand-600/20">
+            <span class="text-white font-bold text-base">攻</span>
           </div>
-          <span class="text-xl font-bold text-slate-800">攻玉学术</span>
+          <span class="text-xl font-bold text-ink-900">攻玉学术</span>
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-1">
           <a
             v-for="link in navLinks"
             :key="link.href"
             :href="link.href"
-            class="text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors"
+            class="px-4 py-2 text-sm font-medium text-ink-600 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-all duration-200"
           >
             {{ link.label }}
           </a>
-          <a
-            href="#"
-            class="px-5 py-2 text-sm font-medium text-white bg-brand-600 rounded-lg hover:bg-brand-700 transition-all duration-300"
-          >
-            即刻开始
-          </a>
+          <div class="ml-4">
+            <a
+              href="#"
+              class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-brand-700 rounded-xl hover:bg-brand-800 transition-all duration-300 shadow-md shadow-brand-700/20 hover:shadow-lg hover:shadow-brand-700/30"
+            >
+              即刻开始
+            </a>
+          </div>
         </div>
 
         <!-- Mobile Menu Button -->
         <button
-          class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+          class="md:hidden p-2 rounded-lg text-ink-600 hover:bg-ink-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
           :aria-expanded="mobileOpen"
           aria-controls="mobile-menu"
           :aria-label="mobileOpen ? '关闭导航菜单' : '打开导航菜单'"
@@ -84,23 +86,25 @@ onUnmounted(() => window.removeEventListener('scroll', handleScroll))
       <div
         id="mobile-menu"
         v-if="mobileOpen"
-        class="md:hidden pb-4 space-y-2"
+        class="md:hidden pb-4 space-y-1 bg-white rounded-xl mt-2 p-3 shadow-xl border border-ink-100"
       >
         <a
           v-for="link in navLinks"
           :key="link.href"
           :href="link.href"
-          class="block px-3 py-2 text-sm font-medium text-slate-600 hover:text-brand-600 hover:bg-slate-50 rounded-lg"
+          class="block px-4 py-2.5 text-sm font-medium text-ink-700 hover:text-brand-700 hover:bg-brand-50 rounded-lg transition-colors"
           @click="mobileOpen = false"
         >
           {{ link.label }}
         </a>
-        <a
-          href="#"
-          class="block px-3 py-2 text-sm font-medium text-white text-center bg-brand-600 rounded-lg"
-        >
-          即刻开始
-        </a>
+        <div class="pt-2 mt-2 border-t border-ink-100">
+          <a
+            href="#"
+            class="block px-4 py-2.5 text-sm font-medium text-white text-center bg-brand-700 rounded-lg hover:bg-brand-800 transition-colors"
+          >
+            即刻开始
+          </a>
+        </div>
       </div>
     </div>
   </nav>
